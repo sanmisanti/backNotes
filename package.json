@@ -9,7 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run lint && npm run compile",
     "lint": "eslint .",
-    "compile": "tsc"
+    "compile": "node index.js"
   },
   "author": "Santi",
   "license": "MIT",
