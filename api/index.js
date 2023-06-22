@@ -2,7 +2,7 @@ const http = require("http");
 const express = require("express");
 const app = express();
 const cors = require("cors");
-app.use(express.static("../dist/index.html"));
+app.use(express.static("../dist"));
 
 app.use(express.json());
 
