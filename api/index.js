@@ -7,7 +7,7 @@ app.use(express.json());
 
 app.use(cors());
 console.log("hola");
-app.use(express.static("./../dist"));
+app.use(express.static("../dist"));
 
 const requestLogger = (request, response, next) => {
   console.log("Method:", request.method);
