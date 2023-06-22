@@ -2,12 +2,12 @@ const http = require("http");
 const express = require("express");
 const app = express();
 const cors = require("cors");
+app.use(express.static("../dist/index.html"));
 
 app.use(express.json());
 
 app.use(cors());
 console.log("hola");
-app.use(express.static("../dist"));
 
 const requestLogger = (request, response, next) => {
   console.log("Method:", request.method);
