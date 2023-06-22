@@ -79,6 +79,8 @@ app.delete("/api/notes/:id", (request, response) => {
 app.put("/api/notes/:id", (request, response) => {
   const id = Number(request.params.id);
   notes.map((note) => (note.id !== id ? note : request.body));
+
+  response.json(request.body);
 });
 
 const generateId = () => {
