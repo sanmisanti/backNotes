@@ -2,7 +2,7 @@ const http = require("http");
 const express = require("express");
 const app = express();
 const cors = require("cors");
-app.use(express.static("../dist"));
+app.use(express.static(path.join(__dirname, "../dist")));
 
 app.use(express.json());
 
@@ -50,7 +50,6 @@ let notes = [
 }; */
 
 app.get("/", (request, response) => {
-  console.log("chau");
   response.send("<h1>Si es acá</h1>");
 });
 
