@@ -51,7 +51,7 @@ let notes = [
 
 app.get("/", (request, response) => {
   console.log("chau");
-  response.send("<h1>Hello World!</h1>");
+  response.send("<h1>Si es acá</h1>");
 });
 
 app.get("/api/notes", (request, response) => {
