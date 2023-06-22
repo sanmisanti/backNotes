@@ -1,9 +1,0 @@
-[build]
-  command = "npm install && npm run build" # Instala las dependencias y construye tu proyecto
-  publish = "build" # Carpeta donde se encuentran los archivos construidos
-
-[build.environment]
-  NODE_VERSION = "18.15.0" # Versión de Node.js que deseas usar
-
-[build.processing]
-  # Opcional: Si tu proyecto utiliza algún proceso de compilación, como transpilación de TypeScript, agrega aquí los comandos necesarios.
