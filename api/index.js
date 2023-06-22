@@ -6,6 +6,7 @@ const cors = require("cors");
 app.use(express.json());
 
 app.use(cors());
+console.log("hola");
 app.use(express.static("./../dist"));
 
 const requestLogger = (request, response, next) => {
@@ -49,6 +50,7 @@ let notes = [
 }; */
 
 app.get("/", (request, response) => {
+  console.log("chau");
   response.send("<h1>Hello World!</h1>");
 });
 
